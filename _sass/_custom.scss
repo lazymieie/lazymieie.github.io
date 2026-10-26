@@ -1,0 +1,65 @@
+/* Personal layer on top of the upstream Academic Pages theme. */
+:root {
+  --global-link-color: #245a91;
+  --global-link-color-hover: #153f6a;
+  --global-link-color-visited: #245a91;
+  --global-text-color: #303b48;
+}
+html[data-theme="dark"] {
+  --global-bg-color: #171d25;
+  --global-footer-bg-color: #1d2530;
+  --global-text-color: #dce4ef;
+  --global-link-color: #93bce8;
+  --global-link-color-hover: #c1dbf7;
+  --global-link-color-visited: #93bce8;
+  --global-border-color: #394555;
+}
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+.page__content { line-height: 1.8; }
+.page__title { font-family: Georgia, "Times New Roman", "Songti SC", serif; font-weight: 700; letter-spacing: -.035em; line-height: 1.25; }
+.name-cn { display: inline-block; margin-left: .3em; font-size: .68em; font-weight: 400; letter-spacing: .05em; color: var(--global-text-color); }
+.intro-kicker { margin-top: -.25em; color: var(--global-link-color); font-size: .9em; font-weight: 600; letter-spacing: .02em; }
+.page__content h2 { margin-top: 2.2em; padding-bottom: .45em; font-size: 1.1em; letter-spacing: -.01em; }
+.profile-links { display: flex; align-items: center; flex-wrap: wrap; gap: .8em 1.4em; margin: 1.7em 0 2em; font-size: .86em; }
+.profile-links a { text-decoration: none; }
+.profile-link-primary { padding: .55em 1em; border: 1px solid var(--global-border-color); border-radius: 5px; }
+.profile-link-primary i { margin-right: .4em; }
+.research-interests { display: grid; gap: .9em; padding: 0 !important; list-style: none; }
+.research-interests li { padding-left: 1em; border-left: 3px solid var(--global-link-color); }
+.research-interests strong, .research-interests span { display: block; }
+.research-interests span { font-size: .88em; opacity: .85; }
+.news-list { margin: 1.2em 0; padding-left: 1.35em; list-style-type: disc; }
+.news-list li { margin-bottom: .85em; padding-left: .1em; line-height: 1.8; }
+.news-list li:last-child { margin-bottom: 0; }
+.news-list time { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.publication-card { margin: 1.4em 0 1.8em; padding-bottom: 1.4em; border-bottom: 1px solid var(--global-border-color); }
+.publication-meta { display: flex; flex-wrap: wrap; gap: .4em 1em; align-items: center; font-size: .72em; }
+.publication-venue { color: var(--global-link-color); font-weight: 700; letter-spacing: .025em; }
+.publication-card h3 { margin: .65em 0 .5em; font-size: 1em; line-height: 1.55; }
+.publication-card h3 a { color: var(--global-text-color); text-decoration: none; }
+.publication-card h3 a:hover { color: var(--global-link-color); }
+.publication-card p { margin-bottom: .6em; font-size: .88em; }
+.publication-links { display: flex; gap: 1.4em; font-size: .78em; font-weight: 600; }
+.publication-links a, .section-more { text-decoration: none; }
+.section-more { font-size: .85em; }
+.experience-row { display: flex; gap: 1em; justify-content: space-between; margin-bottom: 1em; }
+.experience-row span { font-size: .8em; }
+.experience-date { flex-shrink: 0; padding-top: .3em; }
+.project-period { color: var(--global-link-color); font-size: .8em; }
+.author__avatar img { max-width: 168px; object-fit: cover; aspect-ratio: 1; object-position: center 24%; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 4px; }
+@media (min-width: 1024px) { .page { max-width: 870px; } .page__title { font-size: 2.25em; } }
+@media (max-width: 600px) { .experience-row { flex-direction: column; gap: .2em; } .profile-links { gap: .75em 1em; } .page__title { font-size: 1.8em; } }
+
+.avatar-credit { font-size: .65em; opacity: .8; }
+.author__avatar img { object-fit: contain; padding: 14px; background: #f5f8fc; object-position: center; }
+/* Keep the footer after the article, including on wide screens. */
+.page__footer { position: static; bottom: auto; color: var(--global-text-color); }
+body { margin-bottom: 0 !important; }
+@media (max-width: 1023px) {
+  .author__avatar { width: 48px; }
+  .author__avatar img { padding: 5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #main, .masthead, .page__footer { animation: none; }
+}

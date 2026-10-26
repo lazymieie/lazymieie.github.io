@@ -1,0 +1,14 @@
+{% assign publication = include.publication %}
+<article class="publication-card">
+  <div class="publication-meta">
+    <span class="publication-venue">{{ publication.venue | escape }}</span>
+    <span>{{ publication.year }} · {{ publication.author_role | escape }}</span>
+  </div>
+  <h3><a href="{{ publication.url | relative_url }}">{{ publication.title | escape }}</a></h3>
+  <p>{{ publication.summary | escape }}</p>
+  <div class="publication-links">
+    <a href="{{ publication.url | relative_url }}">Overview <span aria-hidden="true">→</span></a>
+    {% if publication.paperurl %}<a href="{% if publication.paperurl contains '://' %}{{ publication.paperurl | escape }}{% else %}{{ publication.paperurl | relative_url | escape }}{% endif %}">Paper (PDF)</a>{% endif %}
+    {% if publication.codeurl %}<a href="{{ publication.codeurl | escape }}">Code</a>{% endif %}
+  </div>
+</article>
