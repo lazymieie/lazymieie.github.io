@@ -28,4 +28,4 @@ assets/js/main.min.js
 .jekyll-cache/
 
 .playwright-cli/
-output/
+/output/
