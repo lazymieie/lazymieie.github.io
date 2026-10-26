@@ -4,11 +4,12 @@
 
 ## 页面
 
-- 首页：`_pages/about.md`，个人介绍、研究方向、动态、精选论文、实习与奖励。
-- 论文：`_pages/publications.html`，正式会议论文和在审稿件分栏。
+- 单页主页：`_pages/about.md`，包含 About、Publications、Projects 和 CV，导航通过页面锚点跳转。
+- 论文栏目：`_includes/sections/publications.html`，正式会议论文和在审稿件分栏。
 - 论文详情：`_publications/deppo.md`、`_publications/egas.md`。
-- 项目：`_pages/projects.md`。
-- 简历：`_pages/cv.md`，适合公开的网页简历。
+- 项目栏目：`_includes/sections/projects.md`。
+- 简历栏目：`_includes/sections/cv.md`，教育、实习、荣誉与技能。
+- 原 `/publications/`、`/projects/` 和 `/cv/` 路径自动跳转至首页相应栏目。
 - 基本信息：`_config.yml`；菜单：`_data/navigation.yml`。
 - 头像：`images/cartoon-cat.svg`，来自 Twemoji，按 CC BY 4.0 署名；不使用真人照片。
 - 个性样式：`_sass/_custom.scss`，在 Academic Pages 样式之后加载。

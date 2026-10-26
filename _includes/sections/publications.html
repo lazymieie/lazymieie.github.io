@@ -1,0 +1,17 @@
+{% if site.author.googlescholar %}
+<p>For a complete publication list, visit my <a href="{{ site.author.googlescholar | escape }}">Google Scholar profile</a>.</p>
+{% endif %}
+
+<h3>Conference Papers</h3>
+{% for publication in sorted_publications reversed %}
+  {% if publication.category == 'conferences' %}
+    {% include publication-card.html publication=publication %}
+  {% endif %}
+{% endfor %}
+
+<h3>Manuscripts</h3>
+{% for publication in sorted_publications reversed %}
+  {% if publication.category == 'manuscripts' %}
+    {% include publication-card.html publication=publication %}
+  {% endif %}
+{% endfor %}

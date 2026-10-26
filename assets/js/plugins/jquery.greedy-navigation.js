@@ -83,4 +83,10 @@ $btn.on('click', function () {
   $(this).toggleClass('close');
 });
 
+// Close the mobile menu before the browser follows an in-page anchor.
+$nav.on('click', 'a[href]', function () {
+  $hlinks.addClass('hidden');
+  $btn.removeClass('close');
+});
+
 updateNav();

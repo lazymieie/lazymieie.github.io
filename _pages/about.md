@@ -19,8 +19,8 @@ I previously interned at **TeleAI**, working on agentic RL, agentic long-video u
 
 <div class="profile-links">
   <a class="profile-link-primary" href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Get in touch</a>
-  <a href="{{ '/publications/' | relative_url }}">Publications <span aria-hidden="true">↗</span></a>
-  <a href="{{ '/cv/' | relative_url }}">Curriculum vitae <span aria-hidden="true">↗</span></a>
+  <a href="#publications">Publications <span aria-hidden="true">↓</span></a>
+  <a href="#cv">Curriculum vitae <span aria-hidden="true">↓</span></a>
 </div>
 
 ## Research Interests
@@ -43,38 +43,14 @@ I previously interned at **TeleAI**, working on agentic RL, agentic long-video u
   <li><strong><time datetime="2023-10">2023.10</time></strong> — Received the <strong>Lei Jun Computer Science Undergraduate Scholarship</strong>.</li>
 </ul>
 
-## Selected Publications
+## Publications
 
-{% for post in sorted_publications reversed %}
-{% if post.selected %}
-{% include publication-card.html publication=post %}
-{% endif %}
-{% endfor %}
+{% include sections/publications.html %}
 
-<a class="section-more" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+## Projects
 
-## Experience
+{% include sections/projects.md %}
 
-<div class="experience-row">
-  <div><strong>TeleAI</strong><br><span>Research Intern · Visual Understanding R&amp;D Center</span></div>
-  <span class="experience-date">Nov. 2025 — Aug. 2026</span>
-</div>
+## CV
 
-Worked on PPO-based training and evaluation for long-horizon agents, tool-assisted video understanding, and joint contrastive–captioning pretraining for vision encoders.
-
-## Honors & Skills
-
-### Honors
-
-- **National Scholarship**, 2024 and 2025.
-- **First-class Scholarship**, awarded in three undergraduate academic years.
-- **Outstanding Student**, awarded in three undergraduate academic years.
-- **Lei Jun Computer Science Undergraduate Scholarship**, 2023.
-- **National Third Prize**, National College Student Computer System Capability Competition.
-
-### Skills
-
-- **Reinforcement Learning:** PPO, GRPO, credit assignment, and generalized advantage estimation (GAE).
-- **Training Systems:** verl, slime, Megatron, SGLang, and distributed Mixture-of-Experts (MoE) training.
-- **Agent Development:** tool-use harnesses, environment integration, reward validation, and experience management.
-- **Multimodal & Embodied AI:** video understanding, vision encoder pretraining, and feedback-driven program evolution.
+{% include sections/cv.md %}

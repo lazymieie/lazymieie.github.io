@@ -1,26 +1,5 @@
 ---
-layout: single
-title: "Publications"
 permalink: /publications/
-author_profile: true
+redirect_to: /#publications
+sitemap: false
 ---
-{% assign sorted_publications = site.publications | sort: 'sort_order' %}
-
-
-{% if site.author.googlescholar %}
-<p>For a complete publication list, visit my <a href="{{ site.author.googlescholar | escape }}">Google Scholar profile</a>.</p>
-{% endif %}
-
-<h2>Conference Papers</h2>
-{% for publication in sorted_publications reversed %}
-  {% if publication.category == 'conferences' %}
-    {% include publication-card.html publication=publication %}
-  {% endif %}
-{% endfor %}
-
-<h2>Manuscripts</h2>
-{% for publication in sorted_publications reversed %}
-  {% if publication.category == 'manuscripts' %}
-    {% include publication-card.html publication=publication %}
-  {% endif %}
-{% endfor %}
