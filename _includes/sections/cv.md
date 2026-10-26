@@ -27,7 +27,9 @@ Worked on PPO-based training and evaluation for long-horizon agents, tool-assist
 - **First-class Scholarship**, awarded in three undergraduate academic years.
 - **Outstanding Student**, awarded in three undergraduate academic years.
 - **Lei Jun Computer Science Undergraduate Scholarship**, 2023.
-- **National Third Prize**, National College Student Computer System Capability Competition.
+- **Second Prize**, 17th “Huazhong Cup” Mathematical Modeling Challenge for College Students (华中杯), May 2025.
+- **National Third Prize**, National College Student Computer System Capability Competition, December 2024.
+- **Provincial Third Prize**, “Higher Education Press Cup” China Undergraduate Mathematical Contest in Modeling (高教社杯), October 2024.
 - Outstanding Youth League Member.
 - Monthly Outstanding Intern recognition.
 
